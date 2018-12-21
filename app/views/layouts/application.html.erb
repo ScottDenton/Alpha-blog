@@ -24,6 +24,12 @@
     </nav>
     <div class="row mt-5">
       <div class="col-md-6 offset-md-4">
+        <% flash.each do|name, msg| %>
+          <ul>
+            <li><%= msg %></li>
+          </ul>
+        <% end %>
+        
         <%= yield %>
       </div>
     </div>
