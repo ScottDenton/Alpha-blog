@@ -14,22 +14,25 @@
   <body>
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href= "/">
-        <img src= "https://orig00.deviantart.net/b25c/f/2017/312/0/f/air_combo_by_ghenny-dbt4epd.gif" width="50" height="50" class="d-inline-block align-top" alt="">
+        <img src= "https://orig00.deviantart.net/b25c/f/2017/312/0/f/air_combo_by_ghenny-dbt4epd.gif"
+        class="d-inline-block align-top header_img" alt="Goku">
         Home
       </a>
+      <a class="navbar-brand" href= "/articles">
+        <img src= "https://www.publicdomainpictures.net/pictures/180000/nahled/books-on-white-1465834356cPa.jpg"
+        class="d-inline-block align-top header_img" alt="book">
+        Articles
+      </a>
+
       <a class="navbar-brand" href= "/about">
-        <img src= "https://orig00.deviantart.net/6f49/f/2017/334/c/b/dragon_ball_z_animation___cell_jr_walk_gif_by_ghenny-dbvdxqf.gif" width="50" height="50" class="d-inline-block align-top" alt="">
+        <img src= "https://orig00.deviantart.net/6f49/f/2017/334/c/b/dragon_ball_z_animation___cell_jr_walk_gif_by_ghenny-dbvdxqf.gif"
+        class="d-inline-block align-top header_img" alt="Cell">
         About
       </a>
     </nav>
     <div class="row mt-5">
       <div class="col-md-6 offset-md-4">
-        <% flash.each do|name, msg| %>
-          <ul>
-            <li><%= msg %></li>
-          </ul>
-        <% end %>
-        
+        <%= render 'layouts/messages'%>
         <%= yield %>
       </div>
     </div>
