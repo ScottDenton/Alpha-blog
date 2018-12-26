@@ -26,12 +26,15 @@
 }
 
 .jumbotron {
-  background-image: asset-url('ruby.jpg');
+  background-image: asset-url('bench.jpg');
   background-size: cover;
   height: 550px;
 }
-.jumbotron h1, p{
-  color: #0C0321;
+.container {
+  color: black;
+}
+.jumbotron {
+  color: white;
   text-align: center;
 }
 
