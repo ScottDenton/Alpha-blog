@@ -1,0 +1,61 @@
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar {
+  font-size: 1.5em;
+
+}
+
+.dropdown-item {
+  font-size: 1.1em;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: red;
+}
+#logo:hover {
+  color: blue;
+}
+
+.center{
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset-url('ruby.jpg');
+  background-size: cover;
+  height: 550px;
+}
+.jumbotron h1, p{
+  color: #0C0321;
+  text-align: center;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  font-size: 1.2em;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul{
+  float: right;
+  list-style:none;
+}
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}

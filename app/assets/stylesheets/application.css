@@ -13,7 +13,3 @@
  *= require_tree .
  *= require_self
  */
-.header_img {
-  height: 50px;
-  width: 50px;
-}

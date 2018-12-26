@@ -2,40 +2,24 @@
 <html>
   <head>
     <title>AlphaBlog</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   </head>
 
   <body>
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href= "/">
-        <img src= "https://orig00.deviantart.net/b25c/f/2017/312/0/f/air_combo_by_ghenny-dbt4epd.gif"
-        class="d-inline-block align-top header_img" alt="Goku">
-        Home
-      </a>
-      <a class="navbar-brand" href= "/articles">
-        <img src= "https://www.publicdomainpictures.net/pictures/180000/nahled/books-on-white-1465834356cPa.jpg"
-        class="d-inline-block align-top header_img" alt="book">
-        Articles
-      </a>
-
-      <a class="navbar-brand" href= "/about">
-        <img src= "https://orig00.deviantart.net/6f49/f/2017/334/c/b/dragon_ball_z_animation___cell_jr_walk_gif_by_ghenny-dbvdxqf.gif"
-        class="d-inline-block align-top header_img" alt="Cell">
-        About
-      </a>
-    </nav>
-    <div class="row mt-5">
-      <div class="col-md-6 offset-md-4">
-        <%= render 'layouts/messages'%>
-        <%= yield %>
-      </div>
+  <%= render 'layouts/navigation' %>
+    <%= render 'layouts/messages'%>
+    <div class ="container">
+      <%= yield %>
     </div>
+    <%= render 'layouts/footer'%>
 
   </body>
 </html>
