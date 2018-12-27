@@ -8,6 +8,8 @@ gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
 
 gem 'bcrypt', '~> 3.1.7'
+gem 'will_paginate', '3.1.6'
+gem 'bootstrap-will_paginate', '1.0.0'
 
 group :production do
   gem 'pg'
